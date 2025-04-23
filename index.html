@@ -6,19 +6,21 @@
     <title>Josh Ayson</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+
+    <script src = "script.js" defer></script>
 </head>
 <body>
     <div class="wrapper">
         <div class="nav-bar">
             <ul>
-                <li>[h] home</li>
-                <li>[w] work</li>
-                <li>[p] projects</li>
-                <li>[l] links</li>
+                <li><a href = index.html>[h] home</a></li>
+                <li><a href = projects.html>[p] projects</a></li>
+                <li><a href = "#links">[l] links</a></li>
             </ul>
         </div>
 
-        <div class="intro-section">
+        <header class="intro-section">
             <h1>josh ayson</h1>
 
             <div class="intro-section-info-container">
@@ -34,27 +36,27 @@
             </div>
 
             <p>hi! i'm an incoming software engineer intern at florida blue and i'm an omscs student at georgia tech specializing in human computer interaction. when i'm not coding, you can find me running, eating, or watching sports (bear down, go jackets, and ynwa). </p>
-        </div>
+        </header>
 
         <div class="work-section">
             <h2><span>*</span> work</h2>
 
             <div class="work-project-container">
-                <div class="work-exp">
+                <div class="description-container">
                     <h3>florida blue</h3>
                     <h4>software engineer intern (incoming may 2025)</h4>
                     <p>backend team</p>
                 </div>
 
-                <div class="work-exp">
+                <div class="description-container">
                     <h3>hillsborough county clerk of court</h3>
                     <h4>information technology intern (sep 2024 - may 2025)</h4>
                     <p>assisted with hardware replacement</p>
                 </div>
 
-                <div class="work-exp">
+                <div class="description-container">
                     <h3>manatee county</h3>
-                    <h4>software engineer intern (may 2024 - aug 2025)</h4>
+                    <h4>software engineer intern (may 2024 - aug 2024)</h4>
                     <p>assisted with migration to new website, built chatbot</p>
                 </div>
             </div>
@@ -63,16 +65,30 @@
         <div class="projects-section">
             <h2><span>*</span> projects</h2>
             <div class="work-project-container">
-                <div class="work-exp">
+                <div class="description-container">
+                    <h3>smart on fhir dashboard</h3>
+                    <h4>contributor</h4>
+                    <p>react application that connects to SMART on FHIR
+servers to provide comparative health analytics.</p>
+                </div>
+
+                <div class="description-container">
                     <h3>veteran services chatbot</h3>
                     <h4>creator</h4>
-                    <p>backend team</p>
+                    <p>full-stack rag chatbot to provide specialized answers regarding the manatee
+county veteran services office and connects veterans to their external agencies.</p>
                 </div>
             </div>
         </div>
 
-        <div class="links-section">
+        <div class="links-section" id = "links">
             <h2><span>*</span> links</h2>
+            <ul>
+                <li><a href = "mailto:njqayson@gmail.com">email</a></li>
+                <li><a href  = "https://github.com/joshayson">github</a></li>
+                <li><a href="http://www.linkedin.com/in/josh-ayson">linkedin</a></li>
+                <li>resume</li>
+            </ul>
         </div>
 
         <div class="footer">
