@@ -128,7 +128,8 @@ color: grey;
 
 }
 .links-section li a,
-.nav-bar li a {
+.nav-bar li a,
+#all-projects {
     color: inherit;
     text-decoration: none;
 }

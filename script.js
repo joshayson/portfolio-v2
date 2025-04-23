@@ -27,9 +27,9 @@ descriptionHeading.forEach((heading) => {
   });
 });
 
+
 // hover effect for links
 const links = document.querySelectorAll("li");
-
 
 links.forEach((link) => {
     link.addEventListener("mouseenter", () => {
@@ -41,3 +41,18 @@ links.forEach((link) => {
         link.style.color = "white";
     });
 })
+
+
+// hover effect for all projects link
+
+const allProjects = document.querySelector("#all-projects")
+
+allProjects.addEventListener("mouseenter", () => {
+    allProjects.style.color = "rgb(255, 64, 0)";
+    allProjects.style.textDecoration = "underline";
+});
+
+allProjects.addEventListener("mouseleave", () => {
+    allProjects.style.color = "white";
+    allProjects.style.textDecoration = "none";
+});
