@@ -221,3 +221,9 @@ span {
     color: white;
     transition: 0.3s ease;
 }
+
+.achievements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
