@@ -15,9 +15,9 @@
     <div class="wrapper">
         <div class="nav-bar">
             <ul>
-                <li><a href = index.html>[h] home</a></li>
-                <li><a href = projects.html>[p] projects</a></li>
-                <li><a href = "#links">[l] links</a></li>
+                <li class = "hover"><a href = index.html>[h] home</a></li>
+                <li class = "hover"><a href = "#projects">[p] projects</a></li>
+                <li class = "hover"><a href = "#links">[l] links</a></li>
             </ul>
         </div>
 
@@ -36,66 +36,109 @@
                 </div>
             </div>
 
-            <p>hi! i'm an incoming software engineer intern at florida blue and i'm an omscs student at georgia tech specializing in human computer interaction. when i'm not coding, you can find me running, eating, or watching sports (bear down, go jackets, and ynwa). </p>
+            <p>hi! i'm an incoming software engineer intern at <span>florida blue</span> and i'm an omscs student at <span>georgia tech</span> specializing in human computer interaction. when i'm not coding, you can find me running, eating, or watching sports (bear down, go jackets, and ynwa). </p>
         </header>
 
-        <div class="work-section">
-            <h2><span>*</span> work</h2>
+        <div class="experience-section">
+            <h2><span>*</span> experience</h2>
 
-            <div class="work-project-container">
-                <div class="description-container">
-                    <h3>florida blue</h3>
-                    <h4>software engineer intern (incoming may 2025)</h4>
+            <div class="experience-container">
+
+                <div class="description-container hover">
+                    <h3 >florida blue</h3>
+                    <p class = "title">software engineer intern (incoming may 2025)</p>
                     <p>backend team</p>
                 </div>
 
-                <div class="description-container">
+                <div class="description-container hover ">
                     <h3>hillsborough county clerk of court</h3>
-                    <h4>information technology intern (sep 2024 - may 2025)</h4>
-                    <p>assisted with hardware replacement</p>
+                    <p class = "title">information technology intern (sep 2024 - may 2025)</p>
+                    <p>assisted with hardware replacement and maintenance. troubleshooted technology issues on tickets.</p>
                 </div>
 
-                <div class="description-container">
-                    <h3>manatee county</h3>
-                    <h4>software engineer intern (may 2024 - aug 2024)</h4>
-                    <p>assisted with migration to new website, built chatbot</p>
+                <div class="description-container hover">
+                    <h3 >manatee county</h3>
+                    <p class = "title">software engineer intern (may 2024 - aug 2024)</p>
+                    <p>assisted with migration of veteran services data to new website. built rag chatbot for veteran intake resources.</p>
                 </div>
+
             </div>
         </div>
 
         <div class="projects-section">
-            <h2><span>*</span> projects</h2>
-            <div class="work-project-container">
+            <h2 id = "projects"><span>*</span> projects</h2>
+
+            <div class="projects-container">
+
                 <div class="description-container">
                     <h3>smart on fhir dashboard</h3>
-                    <h4>contributor</h4>
-                    <p>react application that connects to SMART on FHIR
-servers to provide comparative health analytics.</p>
+                    <p class = "title">contributor</p>
+                    <p>react application that connects to SMART on FHIR servers to provide comparative health analytics.</p>
+                    
+                    <h4 class = "description-headers">achievements</h4>
+                    <ul>
+                        <li>implemented patient search functionality</li>
+                        <li>implemented patient list age and gender filtering</li>
+                        <li>successfully updated pagination based on filter and search</li>
+                    </ul>
+
+                    <h4 class = "description-headers">technologies</h4>
+                    <ul class = "technologies-list">
+                        <li class = "tech-list-hover">typescript</li>
+                        <li class = "tech-list-hover">html/css</li>
+                        <li class = "tech-list-hover">react</li>
+                    </ul>
+
+                    <a href = "https://mediaspace.gatech.edu/media/IHI+Spring+25+-+Group+37++-+Deliverable+3/1_bpfm58yk" class = "project-link">
+                        <span>view project</span>
+                        <i class = "fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                    </a>
                 </div>
 
                 <div class="description-container">
                     <h3>veteran services chatbot</h3>
-                    <h4>creator</h4>
-                    <p>full-stack rag chatbot to provide specialized answers regarding the manatee
-county veteran services office and connects veterans to their external agencies.</p>
+                    <p class = "title">creator</p>
+                    <p>full-stack rag chatbot to provide specialized answers regarding the manatee county veteran services office and connects veterans to their external agencies.</p>
+                    
+                    <h4 class = "description-headers">achievements</h4>
+                    <ul>
+                        <li>implemented patient search functionality</li>
+                        <li>implemented patient list age and gender filtering</li>
+                        <li>successfully updated pagination based on filter and search</li>
+                    </ul>
+
+                    <h4 class = "description-headers">technologies</h4>
+                    <ul class = "technologies-list">
+                        <li class = "tech-list-hover">javascript</li>
+                        <li class = "tech-list-hover">html/css</li>
+                        <li class = "tech-list-hover">express.js</li>
+                        <li class = "tech-list-hover">node.js</li>
+                        <li class = "tech-list-hover">langchain.js</li>
+                    </ul>
+
+                    <a href = "https://github.com/joshayson/vs-chatbot" class = "project-link">
+                        <span>view project</span>
+                        <i class = "fa-solid fa-arrow-up-right-from-square fa-sm"></i>
+                    </a>
                 </div>
-                <a id = "all-projects" href = "projects.html">all projects<i class="fa-solid fa-arrow-up-right-from-square" style = "padding-left: 20px;"></i>
-                </a>
+
             </div>
+
         </div>
 
         <div class="links-section" id = "links">
             <h2><span>*</span> links</h2>
+
             <ul>
-                <li><a href = "mailto:njqayson@gmail.com">email</a></li>
-                <li><a href  = "https://github.com/joshayson">github</a></li>
-                <li><a href="http://www.linkedin.com/in/josh-ayson">linkedin</a></li>
-                <li>resume</li>
+                <li class = "hover"><a href = "mailto:njqayson@gmail.com">email</a></li>
+                <li class = "hover"><a href  = "https://github.com/joshayson">github</a></li>
+                <li class = "hover"><a href="http://www.linkedin.com/in/josh-ayson">linkedin</a></li>
+                <li class = "hover">resume</li>
             </ul>
         </div>
 
         <div class="footer">
-            <p>inspo from nexxel.dev | built by josh ayson</p>
+            <p>inspo from <span>nexxel.dev</span> | built by <span>josh ayson</span></p>
         </div>
     </div>
 </body>

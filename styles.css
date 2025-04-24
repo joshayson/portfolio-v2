@@ -68,7 +68,7 @@ span {
 }
 
 .grey-para {
-color: grey;
+    color: grey;
     margin: 0;
 }
 
@@ -79,11 +79,18 @@ color: grey;
 
 
 /* work + projects section styling */
-.work-project-container {
+.experience-container {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 30px;
+    padding: 30px 30px;;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 20px;
 }
 
 .description-container {
@@ -91,9 +98,16 @@ color: grey;
     flex-direction: column;
     gap: 10px;
 }
-.description-container h4 {
-    color: grey;
+
+.description-container .title {
     font-size: 14px;
+    color: grey;
+}
+
+.description-headers {
+    font-size: 16px;
+    color: white;
+    padding-top: 15px;
 }
 
 .description-container h3 {
@@ -102,6 +116,11 @@ color: grey;
 
 .description-container p {
     font-size: 16px;
+}
+
+.description-container ul {
+    padding-left: 20px;
+    color: grey;
 
 }
 /* work + projects section styling end*/
@@ -124,12 +143,70 @@ color: grey;
     display: flex;
     list-style: none;
     gap: 25px;
-    padding-top: 30px;
+    padding: 30px;
 
 }
 .links-section li a,
-.nav-bar li a,
-#all-projects {
+.nav-bar li a {
     color: inherit;
     text-decoration: none;
 }
+
+.technologies-list {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    padding: 0 !important;
+    flex-wrap: wrap; 
+} 
+
+.technologies-list li {
+    color: grey;
+    background-color: #202029;
+    padding: 6px;
+    border-radius: 3px;
+} 
+
+.tech-list-hover:hover{
+    background-color: #222227;
+    color: white;
+}
+
+.projects-container .description-container {
+    padding: 30px;
+    transition: 0.6s ease;
+      border: 1px solid transparent; 
+}
+
+.projects-container .description-container:hover {
+    border: 1px solid rgb(255, 64, 0); 
+    color: rgb(255, 64, 0);
+}
+
+.hover:hover {
+    transition: 0.2s ease;
+    color: rgb(255, 64, 0);
+}
+
+.project-link {
+    display: inline-flex;
+    padding-top: 15px;
+    color: rgb(255, 64, 0);  
+    gap: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+.project-link i {
+    position: relative;
+    top: 0;
+    transition: top 0.3s ease;
+  }
+  
+  .project-link:hover i {
+    top: -3px; /* raises the arrow on hover */
+  }
