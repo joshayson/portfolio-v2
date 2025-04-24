@@ -138,6 +138,7 @@ span {
 }
 /* footer styling end */
 
+
 /* links styling */
 .links-section ul {
     display: flex;
@@ -152,6 +153,8 @@ span {
     text-decoration: none;
 }
 
+
+/* project description styling */
 .technologies-list {
     display: flex;
     gap: 15px;
@@ -175,14 +178,17 @@ span {
 .projects-container .description-container {
     padding: 30px;
     transition: 0.6s ease;
-      border: 1px solid transparent; 
+    border: 1px solid transparent; 
 }
 
+/* project border hover */
 .projects-container .description-container:hover {
     border: 1px solid rgb(255, 64, 0); 
     color: rgb(255, 64, 0);
+    border-radius: 2px;
 }
 
+/* hover effects */
 .hover:hover {
     transition: 0.2s ease;
     color: rgb(255, 64, 0);
@@ -207,6 +213,11 @@ span {
     transition: top 0.3s ease;
   }
   
-  .project-link:hover i {
+.project-link:hover i {
     top: -3px; /* raises the arrow on hover */
-  }
+}
+
+.white-hover:hover {
+    color: white;
+    transition: 0.3s ease;
+}
